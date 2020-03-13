@@ -1,0 +1,6 @@
+SELECT user.gender,
+COUNT(*) AS total
+FROM user
+INNER JOIN map_user_hobby.id_user = user.id
+INNER JOIN map_user_hobby.id_hobby = Hobby.id
+GROUP BY user.name

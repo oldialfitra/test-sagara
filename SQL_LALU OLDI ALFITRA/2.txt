@@ -1,0 +1,5 @@
+SELECT user.name AS 'name_user', COUNT(*)
+FROM user
+INNER JOIN map_user_hobby.id_user = user.id
+INNER JOIN map_user_hobby.id_hobby = Hobby.id
+GROUP BY user.name
